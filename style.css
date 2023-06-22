@@ -1,0 +1,124 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 490px;
+    background-color: white;
+    top: 10rem;
+    left: 48rem;
+    border-radius: 15px;
+}
+
+.container img:first-child {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container img:nth-child(2) {
+    position: absolute;
+    top: 7rem;
+    right: 10rem;
+    border-radius: 50%;
+    outline: 5px solid white;
+}
+
+.container h3 {
+    position: absolute;
+    top: 15rem;
+    left: 8rem;
+}
+
+.container p:first-of-type {
+    position: absolute;
+    top: 15.1rem;
+    left: 15.7rem;
+    font-size: 18px;
+    color: var(--dark-gray);
+}
+
+.container p:nth-of-type(2) {
+    position: absolute;
+    top: 17.5rem;
+    left: 10.4rem;
+    color: var(--dark-gray);
+}
+
+hr {
+    position: absolute;
+    top: 22rem;
+    width: 400px;
+    color: #eee;
+}
+
+.container h2:first-of-type {
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+}
+
+.container h5:first-of-type {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 3.5rem;
+    color: var(--dark-gray);
+    letter-spacing: 1px;
+}
+
+.container h2:nth-of-type(2) {
+    position: absolute;
+    bottom: 4rem;
+    left: 11rem;
+}
+
+.container h5:nth-of-type(2) {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 11.5rem;
+    color: var(--dark-gray);
+    letter-spacing: 1px;
+}
+
+.container h2:nth-of-type(3) {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+}
+
+.container h5:nth-of-type(3) {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 4rem;
+    color: var(--dark-gray);
+    letter-spacing: 1px;
+}
+
+img:nth-of-type(3) {
+    z-index: -1;
+    position: absolute;
+    left: 14rem;
+    top: 18rem;
+}
+
+img:last-child {
+    z-index: -1;
+    position: absolute;
+    right: 15rem;
+    top: -30rem;
+}
